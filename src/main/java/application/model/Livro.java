@@ -17,7 +17,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-public class LIvro {
+public class Livro {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
@@ -27,4 +27,4 @@ public class LIvro {
     @ManyToOne
     @JoinColumn(name="id_genero")
     private Genero genero;
-}
+} 
